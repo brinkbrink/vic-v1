@@ -1,0 +1,65 @@
+/* Global rules */
+.topnav {
+    width: 90%;
+    margin: auto;
+    background-color: #5e1224;
+    overflow: auto;
+    text-align: center;
+    position: fixed;
+    float: left;
+    top: 0px;
+}
+.topnav li {
+    display:inline;
+}
+.topnav a {
+    display: inline-block;
+    color: #fff;
+    background-color: #5e1224;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 6px 10%;
+}
+
+.topnav a:hover, :active {
+    background-color: #fff;
+    color: #5e1224;
+}
+
+.topnav .icon {
+    display: none;
+}
+/* Responsive rules */
+
+/* DESKTOP */
+
+@media all and (min-width:1149px) {
+    .topnav a {
+        font-size: 16px;
+    }
+}
+
+/* TABLET */
+
+@media all and (min-width:461px) and (max-width:1150px) {
+    .topnav a {
+        padding: 6px 7%;
+        font-size: 16px;
+    }
+}
+
+/* PHONE */
+
+@media all and (min-width: 339px) and (max-width:460px) {
+    .topnav a {
+        padding: 6px 4%;
+        font-size: 16px;
+    }
+}
+
+@media all and (max-width:338px) {
+    .topnav a {
+        padding: 6px 3%;
+        font-size: 16px;
+    }
+}
